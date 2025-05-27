@@ -1,0 +1,311 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem;
+  position: relative;
+  width: 565px;
+
+  background: #f1f5f9;
+  border-right: 1px solid #e2e8f0;
+  /* overflow-y: auto; */
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px ;
+  margin: 10px;
+  background: #e5ecf1;
+}
+
+/* Top-right positioning */
+
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* gap: 0.75rem;
+  margin-bottom: 1rem; */
+}
+
+.user-profile {
+  width: 32px;
+  height: 32px;
+  background: #3bf3f6;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* color: white; */
+}
+
+.user-avatar {
+  width: 25px;
+  height: 25px;
+  background: #e2e8f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  /* font-size: 16px; */
+}
+
+.add-button {
+  width: 30px;
+  height: 30px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* Calendar Section */
+/* ✅ Keep this unchanged */
+.calendar-section-wrapper {
+  border-radius: 12px;
+  padding: 1.5rem;
+  padding-top: 0px;
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+  height: 200px;
+  margin: 10px;
+  display: flex; /* ✅ Needed for side-by-side layout */
+  gap: 2rem; /* Optional: space between calendar and sidebar */
+  /* margin-bottom: 1.5rem; */
+}
+
+/* ✅ Keep your original styles below this line */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+/* ✅ New wrapper to group header + grid */
+.calendar-content {
+  flex: 1;
+}
+
+/* ✅ Rest of your unchanged CSS */
+.calendar-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.calendar-nav {
+  display: flex;
+  gap: 0.7rem;
+  
+}
+
+.calendar-nav-btn {
+  padding: 0.5rem;
+  border: 1px solid #e2e8f0;
+  background: white;
+  border-radius: 5.5px;
+  cursor: pointer;
+  color: black;
+}
+
+.calendar-grid {
+  margin-bottom: 1.5rem;
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.weekday {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+}
+
+.calendar-day {
+  min-height: 40px;
+  padding: 0.25rem;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.calendar-day:hover {
+  background: #f8fafc;
+}
+
+.day-number {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.8rem;
+}
+
+.appointment-time {
+  font-size: 0.625rem;
+  background: #3b82f6;
+  color: white;
+  padding: 0.125rem 0.25rem;
+  border-radius: 7px;
+  margin-top: 0.25rem;
+}
+
+
+
+.today-appointments {
+  /* border-top: 1px solid #6fa1e3; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Space between cards */
+  /* padding-top: 1rem; */
+
+}
+
+.today-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.appointment-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  padding-top: 0px;
+  background: #8999ae;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  width: 200px;
+  text-align: left;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  height: 90px;
+  margin-left: 25px;
+}
+
+.appointment-card:hover {
+  background: #3b5998; /* Darker shade of blue */
+}
+
+.appointment-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: white;
+}
+
+.appointment-doctor {
+  font-size: 0.75rem;
+  color: white;
+}
+
+.appointment-time-badge {
+  font-size: 0.75rem;
+  /* color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px; */
+   color: white;
+}
+
+
+
+/* Schedule and Activity Section */
+.schedule-activity-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Upcoming Schedule */
+.upcoming-schedule {
+  /* background: white; */
+  border-radius: 15px;
+  padding-left: 25px;
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+}
+
+.schedule-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 0px;
+}
+
+/* .schedule-day-group {
+  /* margin-bottom: 1.5rem; 
+} */
+
+.schedule-day {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.day-appointments {
+  display: flex;
+  /* flex-direction: column; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem; /* Space between cards */
+  /* padding-top: 1rem; */
+  
+}
+
+.simple-appointment-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* padding: 0.75rem 1rem 0.75rem 1rem;  */
+  background: #8999ae;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  width: 220px;
+  /* height: 80px; */
+  text-align: left;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  color: white;
+  padding-left: 10px;
+}
+
+/* FIX 1: Hover effect on entire card */
+.simple-appointment-card:hover {
+  background: #3b5998;
+}
+
+.appointment-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appointment-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  flex: 1;
+}
+
+.icon-appointment {
+  padding-left: 5px;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.appointment-schedule {
+  font-size: 0.75rem;
+  color: white;
+  margin-top: 0.5rem;
+}
